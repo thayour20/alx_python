@@ -1,1 +1,0 @@
-print('"programming is like building a muitilingual puzzle')
