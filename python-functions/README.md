@@ -1,0 +1,1 @@
+the purpose of this files is to write and test some python function codes
