@@ -4,11 +4,7 @@ def is_prime(number):
     if number <= 0:
         prime = False
     elif number > 1:
-
         for i in range (2, number):
             if number % i == 0:
-                prime = False
-                
+                prime = False            
     return (prime)
-print(is_prime(0))  # Output: True
-print(is_prime(0))
