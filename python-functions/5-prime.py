@@ -10,3 +10,5 @@ def is_prime(number):
                 prime = False
                 
     return (prime)
+print(is_prime(0))  # Output: True
+print(is_prime(0))
