@@ -13,5 +13,3 @@ def fibonacci_sequence(n):
             return ([])
         fibonacci_list.append(next_fibonacci)
     return (fibonacci_list)
-fibonacci_sequence(5)
-print(fibonacci_sequence(20))
