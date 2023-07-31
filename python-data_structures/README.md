@@ -1,0 +1,1 @@
+the purpose of this directory is to learn python data structure 
