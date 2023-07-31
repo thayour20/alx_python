@@ -6,10 +6,3 @@ def print_matrix_integer(matrix=[[]]):
             print("{:d}".format(element), end=" ")
         print()
     
-    
-print(print_matrix_integer(matrix=[
-    [1, 5, 7],
-    [3, 7, 8],
-    [3, 4, 1]
-]
-))
