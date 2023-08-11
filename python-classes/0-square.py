@@ -4,8 +4,10 @@
      This class represents a square.
 """
 class square:
+     
      """
-     This class represents a square.
+        This is for different object diclearation to represents a square.
+     
      """
      def __init__ (self, size):
         """
