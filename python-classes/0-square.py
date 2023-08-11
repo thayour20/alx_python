@@ -1,4 +1,8 @@
 #!/usr/bin python 3
+
+"""
+     This class represents a square.
+"""
 class square:
      """
      This class represents a square.
