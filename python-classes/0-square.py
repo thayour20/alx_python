@@ -3,7 +3,6 @@
      This class represents a square.
 """
 class square:
-     
     """
     This is for different object diclearation to represents a square.
 
