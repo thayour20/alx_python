@@ -1,8 +1,12 @@
 #!/usr/bin python 3
-class square:
+class Square:
+    """
+    This class represents a square.
 
-    """ function to create a private isinstance size and check for if it is a positive integer"""
-    def __init__ (self, size):
+    Attributes:
+        __size (int): The size of the square.
+    """
+    def __init__(self, size=0):
         """
         Initializes a Square instance with an optional size.
 
@@ -13,10 +17,9 @@ class square:
             TypeError: If size is not an integer.
             ValueError: If size is less than 0.
         """
-
-        if not isinstance (size, int):
-            raise TypeError ("It is not an integer")
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
         elif size < 0:
-            raise ValueError ("The value is less than zero")
+            raise ValueError("size must be >= 0")
         
         self.__size = size
