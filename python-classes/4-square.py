@@ -59,7 +59,7 @@ class Square:
             for i in range (hash_square):
                 for j in range (hash_square):
                     
-                    print("#", end=' ')  
+                    print("#", end='')  
                 print ()
         elif hash_square == 0:
             print()
