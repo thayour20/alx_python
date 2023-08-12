@@ -6,10 +6,10 @@
 class square:
      
      """
-        This is for different object diclearation to represents a square.
+    This is for different object diclearation to represents a square.
 
-        Attributes:
-            __size (int): The size of the square.
+    Attributes:
+        __size (int): The size of the square.
      
      """
      def __init__ (self, size):
