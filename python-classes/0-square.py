@@ -2,7 +2,7 @@
 """
      This class represents a square.
 """
-class square:
+class Square:
     """
     This class represents a square.
 
