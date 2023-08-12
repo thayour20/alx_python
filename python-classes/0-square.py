@@ -1,21 +1,19 @@
 #!/usr/bin python 3
 """
-This module defines a Square class that represents a square shape.
-
-The Square class provides a way to create square objects with a specified size.
-It also includes a method to calculate the area of the square.
-
-Attributes:
-    None
+     This class represents a square.
 """
-
-class Square:
+class square:
+     
     """
-    This class represents a square.
+    This is for different object diclearation to represents a square.
 
     Attributes:
         __size (int): The size of the square.
+     
     """
-
-    def __init__(self, size):
+    def __init__ (self, size):
+        """
+        Attributes:
+        __size : is private
+        """
         self.__size = size
