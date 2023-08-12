@@ -7,6 +7,8 @@ class square:
      
      """
         This is for different object diclearation to represents a square.
+
+        Attributes:
      
      """
      def __init__ (self, size):
