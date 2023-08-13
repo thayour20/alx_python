@@ -6,4 +6,5 @@ class BaseGeometry:
     """
         empty class with a pass statement.
     """
-    pass
+    def __init__ (self):
+        pass
