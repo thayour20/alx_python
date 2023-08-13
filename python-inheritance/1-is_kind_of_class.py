@@ -4,7 +4,6 @@
 """
 def is_kind_of_class(obj, a_class):
      """
-        If/else statement to check for tne isinstance
-        Return: True if yes and False if no
+        Return: True if it is isinstance and False if no
     """
-     return type(obj) is a_class
+     return isinstance (obj, a_class)
