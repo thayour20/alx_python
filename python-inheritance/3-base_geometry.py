@@ -3,4 +3,7 @@
     an emply class of Basegeometry
 """
 class BaseGeometry:
+    """
+        empty class with a pass statement.
+    """
     pass
