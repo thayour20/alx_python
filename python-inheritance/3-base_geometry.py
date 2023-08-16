@@ -15,4 +15,6 @@ class BaseGeometry(metaclass=BaseMeta):
     """
         empty class with a pass statement.
     """
-    pass
+    def __dir__(cls) -> None:
+        original_dir = super().__dir__()
+        return [item for item in original_dir if item != '__init_subclass__' ]
