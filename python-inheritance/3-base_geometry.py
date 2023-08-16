@@ -9,4 +9,4 @@ class BaseGeometry:
     
     def __dir__(cls) -> None:
         original_dir = super().__dir__()
-        return [item for item in original_dir if item != '__init_subclass__' ]
+        return [item for item in original_dir if original_dir != '__init_subclass__' ]
