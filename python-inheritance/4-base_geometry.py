@@ -2,12 +2,24 @@
 """
     an emply class of Basegeometry
 """
-class BaseGeometry:
+   
+class BaseMeta(type):
     """
-        function to raise an exception statement.
+        empty class with a pass statement.
+    """  
+    def __dir__(cls) -> None:
+        original_dir = super().__dir__()
+        return [item for item in original_dir if item != '__init_subclass__' ]
+        
+class BaseGeometry(metaclass=BaseMeta):
     """
+        empty class with a pass statement.
+    """
+    def __dir__(cls) -> None:
+        original_dir = super().__dir__()
+        return [item for item in original_dir if item != '__init_subclass__' ]
     def __init__ (self):
         pass
-    
+
     def area(self):
         raise Exception ("area() is not implemented")
