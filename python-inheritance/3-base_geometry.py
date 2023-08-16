@@ -2,14 +2,17 @@
 """
     an emply class of Basegeometry
 """
-    
-class BaseGeometry:
+   
+class BaseMeta(type):
+    """
+        empty class with a pass statement.
+    """  
+    def __dir__(cls) -> None:
+        original_dir = super().__dir__()
+        return [item for item in original_dir if item != '__init_subclass__' ]
+        
+class BaseGeometry(metaclass=BaseMeta):
     """
         empty class with a pass statement.
     """
-
-    def __dir__(cls) -> None:
-       
-        attributes = super().__dir__()
-
-        return [attribute for attribute in attributes if attribute != '__init_subclass__']
+    pass
