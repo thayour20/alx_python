@@ -7,6 +7,6 @@ class BaseGeometry:
         empty class with a pass statement.
     """
     
-    def __dir__(cls):
+    def __dir__(cls) -> None:
         original_dir = super().__dir__()
         return [item for item in original_dir if item != '__init_subclass__' ]
