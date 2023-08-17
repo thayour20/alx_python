@@ -19,12 +19,21 @@ class BaseGeometry(metaclass=BaseMeta):
         original_dir = super().__dir__()
         return [item for item in original_dir if item != '__init_subclass__' ]
     def __init__ (self):
+        """
+            -----------
+        """
         pass
 
     def area(self):
+        """
+            -----------
+        """
         raise Exception ("area() is not implemented")
     
     def integer_validator(self, name = str, value = int):
+        """
+            -----------
+        """
 
         if not isinstance (value, int):
             raise TypeError ("{} must be an integer".format(name))
