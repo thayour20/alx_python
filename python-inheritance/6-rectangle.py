@@ -3,6 +3,9 @@
      rectangle declearation function
 """
 BaseGeometry = __import__ ('5-base_geometry.py').BaseGeometry
+"""
+     rectangle declearation function
+"""
 class Rectangle(BaseGeometry):
     """
         initialization
