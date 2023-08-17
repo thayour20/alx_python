@@ -22,9 +22,16 @@ class BaseGeometry(metaclass=BaseMeta):
         pass
 
     def area(self):
+        """
+        rectangle declearation function
+        """
         raise Exception ("area() is not implemented")
     
+    
     def integer_validator(self, name = str, value = int):
+        """
+        rectangle declearation function
+        """
 
         if not isinstance (value, int):
             raise TypeError ("{} must be an integer".format(name))
