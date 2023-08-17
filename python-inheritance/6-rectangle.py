@@ -36,6 +36,9 @@ class BaseGeometry(metaclass=BaseMeta):
     """
 
     def __init__(self, width, height):
+        """
+        integer validation and private class declearation
+        """
 
         if not isinstance (width, int):
             raise TypeError ("width must be an integer")
