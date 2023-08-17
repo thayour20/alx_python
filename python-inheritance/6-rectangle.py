@@ -1,23 +1,57 @@
 #!/usr/bin/python3   
 """
-     rectangle declearation function
+    an emply class of Basegeometry
 """
-#BaseGeometry = __import__ ('5-base_geometry.py').BaseGeometry
+   
+class BaseMeta(type):
+    """
+        empty class with a pass statement.
+    """  
+    def __dir__(cls) -> None:
+        original_dir = super().__dir__()
+        return [item for item in original_dir if item != '__init_subclass__' ]
+        
+class BaseGeometry(metaclass=BaseMeta):
+    """
+        class with a cls and area functiions.
+    """
+    def __dir__(cls) -> None:
+        original_dir = super().__dir__()
+        return [item for item in original_dir if item != '__init_subclass__' ]
+    def __init__ (self):
+        """
+            -----------
+        """
+        pass
+
+    def area(self):
+        """
+            -----------
+        """
+        raise Exception ("area() is not implemented")
+    
+    def integer_validator(self, name = str, value = int):
+        """
+            -----------
+        """
+
+        if not isinstance (value, int):
+            raise TypeError ("{} must be an integer".format(name))
+        elif value <= 0:
+            raise ValueError ("{} must be greater than 0".format(name))
 """
      rectangle declearation function
 """
 class Rectangle(BaseGeometry):
     """
-    Rectangle class that inherits from BaseGeometry.
+        initialization
     """
+    
     def __init__(self, width, height):
         """
-        Initialize the Rectangle with width and height.
-        
-        Args:
-            width (int): The width of the rectangle.
-            height (int): The height of the rectangle.
+        integer validation and private class declearation
         """
+
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__width = width
