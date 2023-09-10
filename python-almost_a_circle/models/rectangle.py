@@ -2,7 +2,7 @@
 """
     imorting of the base class
 """
-from base import Base
+from models.base import Base
 
 """
     REctangle class that inherit from the Base class
