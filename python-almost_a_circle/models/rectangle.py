@@ -1,82 +1,98 @@
 #!/usr/bin/python3
+"""
+    imorting of the base class
+"""
+from base import Base
 
-from models.base import Base
+"""
+    REctangle class that inherit from the Base class
+"""
+class Rectangle (Base):
 
-"""Rectangle class, inherits from Base."""
-
-
-class Rectangle(Base):
-    """Rectangle class, inherits from Base."""
+    """ Init function"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Constructor for Rectangle class.
 
-        Args:
-            width (int): Width of the rectangle.
-            height (int): Height of the rectangle.
-            x (int, optional): x-coordinate of the rectangle's position. Defaults to 0.
-            y (int, optional): y-coordinate of the rectangle's position. Defaults to 0.
-            id (int, optional): The id to assign to the rectangle. Defaults to None.
         """
+            constructor for rectangle class
+
+            Args:
+                weight and height of the rectangle
+                x and y coordinate of the rectangle position
+                id : is the id assign to the rectangle and by default, it is None. 
+        """
+
         super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
 
-    @property
-    def width(self):
-        """Getter method for width."""
-        return self.__width
+        @property
+        def width(self):
+            """Getter method for the width"""
+            return self.__width
+        
+        @width.setter
+        def width(self, value):
 
-    @width.setter
-    def width(self, value):
-        """Setter method for width."""
-        if not isinstance(value, int):
-            raise TypeError("width must be an integer")
-        if value <= 0:
-            raise ValueError("width must be > 0")
-        self.__width = value
+            """ setter method for the width """
 
-    @property
-    def height(self):
-        """Getter method for height."""
-        return self.__height
+            if not isinstance (value, int):
+                raise TypeError ("width is not an integer")
+            
+            if value <= 0:
+                raise ValueError ("width is less than or equal to zero")
+            
+            self.__width = value
 
-    @height.setter
-    def height(self, value):
-        """Setter method for height."""
-        if not isinstance(value, int):
-            raise TypeError("height must be an integer")
-        if value <= 0:
-            raise ValueError("height must be > 0")
-        self.__height = value
+        @property
+        def height(self):
+            """ Getter method for the height """
+            return self.__height
+        
+        @height.setter
+        def height (self, value):
+            """ Setter method for the height """
 
-    @property
-    def x(self):
-        """Getter method for x."""
-        return self.__x
+            if not isinstance (value, int):
+                raise TypeError ("height is not an integer")
+            
+            if value <= 0:
+                raise ValueError ("value is less than or equal to zero")
+            self.__height = value
 
-    @x.setter
-    def x(self, value):
-        """Setter method for x."""
-        if not isinstance(value, int):
-            raise TypeError("x must be an integer")
-        if value < 0:
-            raise ValueError("x must be >= 0")
-        self.__x = value
+        @property
+        def x(self):
+            """ Getter method for x """
+            return self.__x
+        
+        @x.setter
+        def x(self, value):
 
-    @property
-    def y(self):
-        """Getter method for y."""
-        return self.__y
+            """ Setter method for x """
 
-    @y.setter
-    def y(self, value):
-        """Setter method for y."""
-        if not isinstance(value, int):
-            raise TypeError("y must be an integer")
-        if value < 0:
-            raise ValueError("y must be >= 0")
-        self.__y = value
+            if not isinstance (value, int):
+                raise TypeError ("x is not an integer")
+            
+            if value < 0:
+                raise ValueError (" x is less than zero")
+            
+            self.__x = value
 
+        @property
+        def y(self):
+            """setter method for y """
+            return self.__y
+        
+        @y.setter
+        def y(self, value):
+
+            """ Getter method for y """
+
+            if not isinstance (value, int):
+                raise TypeError ("y is not an integer")
+            
+            if value < 0:
+                raise ValueError ("y is less than zero")
+            self.__y = value
