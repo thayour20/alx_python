@@ -1,0 +1,1 @@
+this purpose of this directory is to practice some python features
