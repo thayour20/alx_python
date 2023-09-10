@@ -32,20 +32,20 @@ class Rectangle (Base):
             return self.__width
         
         @width.setter
-        def width (self, value):
+        def width(self, value):
 
             """ setter method for the width """
 
             if not isinstance (value, int):
-                raise TypeError ("Value is not an integer")
+                raise TypeError ("width is not an integer")
             
             if value <= 0:
-                raise ValueError ("value is less than or equal to zero")
+                raise ValueError ("width is less than or equal to zero")
             
             self.__width = value
 
         @property
-        def height (self):
+        def height(self):
             """ Getter method for the height """
             return self.__height
         
@@ -54,7 +54,7 @@ class Rectangle (Base):
             """ Setter method for the height """
 
             if not isinstance (value, int):
-                raise TypeError ("value is not an integer")
+                raise TypeError ("height is not an integer")
             
             if value <= 0:
                 raise ValueError ("value is less than or equal to zero")
@@ -71,27 +71,27 @@ class Rectangle (Base):
             """ Setter method for x """
 
             if not isinstance (value, int):
-                raise TypeError ("value is not an integer")
+                raise TypeError ("x is not an integer")
             
             if value < 0:
-                raise ValueError (" value is less than zero")
+                raise ValueError (" x is less than zero")
             
             self.__x = value
 
         @property
-        def y (self):
+        def y(self):
             """setter method for y """
             return self.__y
         
         @y.setter
-        def y (self, value):
+        def y(self, value):
 
             """ Getter method for y """
 
             if not isinstance (value, int):
-                raise TypeError ("value is not an integer")
+                raise TypeError ("y is not an integer")
             
             if value < 0:
-                raise ValueError ("value is less than zero")
+                raise ValueError ("y is less than zero")
             self.__y = value
 
