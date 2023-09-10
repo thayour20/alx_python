@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ imorting of the base class"""
-from base import Base
+#from base import Base
 
 """
     REctangle class that inherit from the Base class
