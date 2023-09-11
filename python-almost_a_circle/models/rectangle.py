@@ -110,10 +110,11 @@ class Rectangle (Base):
             function to display the size of the rectangle in form of an asterick
         """
 
-        for row in range(self.height):
-            for element in range(self.width):
-                print("#", end="")
+        for i in range(self.y):
             print()
+        for i in range(self.height):
+            print(" " * self.x + "#" * self.width)
+    
 
     def __str__(self):
 
@@ -124,4 +125,3 @@ class Rectangle (Base):
 
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height)
-    
