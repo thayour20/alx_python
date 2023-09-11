@@ -2,7 +2,7 @@
 """
     imorting of the base class
 """
-from base import Base
+from models.base import Base
 
 """
     REctangle class that inherit from the Base class
@@ -122,4 +122,6 @@ class Rectangle (Base):
             rectangle properties
         """
 
-        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.x, self.y, self.width, self.height)
+    
