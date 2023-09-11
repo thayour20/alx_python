@@ -103,3 +103,14 @@ class Rectangle (Base):
             function to calculate the area of the rectangle
         """
         return self.width * self.height
+    
+    def display(self):
+
+        """
+            function to display the size of the rectangle in form of an asterick
+        """
+
+        for row in range(self.height):
+            for element in range(self.width):
+                print("#", end="")
+            print()
