@@ -39,10 +39,10 @@ class Rectangle (Base):
         """ setter method for the width """
 
         if not isinstance (value, int):
-            raise TypeError ("width is not an integer")
+            raise TypeError ("width must be an integer")
         
         if value <= 0:
-            raise ValueError ("width is less than or equal to zero")
+            raise ValueError ("width must be > 0")
         
         self.__width = value
 
@@ -56,10 +56,10 @@ class Rectangle (Base):
         """ Setter method for the height """
 
         if not isinstance (value, int):
-            raise TypeError ("height is not an integer")
+            raise TypeError ("height must be an integer")
         
         if value <= 0:
-            raise ValueError ("value is less than or equal to zero")
+            raise ValueError ("height must be > 0")
         self.__height = value
 
     @property
@@ -73,10 +73,10 @@ class Rectangle (Base):
         """ Setter method for x """
 
         if not isinstance (value, int):
-            raise TypeError ("x is not an integer")
+            raise TypeError ("x must be an integer")
         
         if value < 0:
-            raise ValueError (" x is less than zero")
+            raise ValueError (" x must be >= 0")
         
         self.__x = value
 
@@ -91,8 +91,8 @@ class Rectangle (Base):
         """ Getter method for y """
 
         if not isinstance (value, int):
-            raise TypeError ("y is not an integer")
+            raise TypeError ("y must be an integer")
         
         if value < 0:
-            raise ValueError ("y is less than zero")
+            raise ValueError ("y must be >= 0")
         self.__y = value
