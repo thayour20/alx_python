@@ -2,7 +2,7 @@
 """
     imorting of the base class
 """
-from models.base import Base
+from base import Base
 
 """
     REctangle class that inherit from the Base class
@@ -114,3 +114,12 @@ class Rectangle (Base):
             for element in range(self.width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+
+        """
+            function that overrides the str method to display the
+            rectangle properties
+        """
+
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))
