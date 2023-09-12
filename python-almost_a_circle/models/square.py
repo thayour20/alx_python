@@ -43,3 +43,23 @@ class Square (Rectangle):
 
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """Update attributes using both positional and keyword arguments."""
+        if args:
+            attrs = ["id", "size", "x", "y"]
+            for i, arg in enumerate(args):
+                if i < len(attrs):
+                    setattr(self, attrs[i], arg)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+
+    def to_dictionary(self):
+        """ it returns the dic rep. of the square """
+        return {
+            "id" : self.id,
+            "size" : self.size,
+            "x" : self.x,
+            "y" : self.y
+        }
