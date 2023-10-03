@@ -13,5 +13,5 @@ response = requests.get(url)
 
 print(response.text)
 
-if response.status_code <= 400:
-    print("Error code:", response.status_code)
+#if response.status_code <= 400:
+
