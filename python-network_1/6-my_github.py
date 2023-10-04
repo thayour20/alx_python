@@ -3,16 +3,17 @@
 import requests
 import sys
 
-   
-url = 'https://api.github.com/user'
+
 username = sys.argv[1]
 password = sys.argv[2]
 authentification = (username, password)
 
-response = requests.get(url, data = authentification)
+url = "https://api.github.com/user"
 
-if response.status.code // 100 == 2:
-    data = response.jason()
+response = requests.get(url, auth = authentification)
+
+if response.status_code // 100 == 2:
+    data = response.json()
 
     print(data["id"])
 else:
