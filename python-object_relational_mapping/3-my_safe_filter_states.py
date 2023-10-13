@@ -17,12 +17,12 @@ def states_search():
 
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC".format(sys.argv[4]))
+    cursor.execute("SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC"(sys.argv[4]))
 
     results = cursor.fetchall()
     for result in results:
-        if result == sys.argv[4]:
-            print(result)
+    
+        print(result)
     cursor.close()
     db.close()
 
